@@ -27,7 +27,7 @@
 
             
               <div class="form-group text-left">
-                <label for="fromField">fromField</label>
+                <label for="fromField">From Field</label>
                 
                     <textarea formControlName="fromField" class="form-control" rows="3"></textarea>
                 
@@ -36,18 +36,18 @@
           
 
             
-              <div class="form-group text-left">
+              <!-- <div class="form-group text-left">
                 <label for="logs">logs</label>
                 
                   <input formControlName="logs" type="text" class="form-control">
                 
-              </div>
+              </div> -->
             
           
 
             
               <div class="form-group text-left">
-                <label for="animal">animal</label>
+                <label for="animal">Animal</label>
                 
                     <textarea formControlName="animal" class="form-control" rows="3"></textarea>
                 
@@ -57,7 +57,7 @@
 
             
               <div class="form-group text-left">
-                <label for="from">from</label>
+                <label for="from">From Business</label>
                 
                     <textarea formControlName="from" class="form-control" rows="3"></textarea>
                 
@@ -67,7 +67,7 @@
 
             
               <div class="form-group text-left">
-                <label for="to">to</label>
+                <label for="to">To Business</label>
                 
                     <textarea formControlName="to" class="form-control" rows="3"></textarea>
                 
@@ -76,7 +76,7 @@
           
 
             
-              <div class="form-group text-left">
+              <!-- <div class="form-group text-left">
                 <label for="transactionId">transactionId</label>
                 
                   <input formControlName="transactionId" type="text" class="form-control">
@@ -91,7 +91,7 @@
                 
                   <input formControlName="timestamp" type="text" class="form-control">
                 
-              </div>
+              </div> -->
             
           
 
@@ -243,7 +243,7 @@
   
   <div class="row">
     <div class="col-md-12">
-        <h1 class="transaction-title" id='transactionName'>AnimalMovementDeparture</h1>
+        <h1 class="transaction-title" id='transactionName'>Animal Movement Departure</h1>
         <p class="invoke_cancel" id='invoke_cancel'>Invoke</p>
     </div>
   </div>
@@ -258,43 +258,43 @@
             
 
               
-                <li><span class="attribute"><b>fromField</b></span></li>
+                <li><span class="attribute"><b>From Field</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>logs</b></span></li>
+                <li><span class="attribute"><b>Logs (auto-generated)</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>animal</b></span></li>
+                <li><span class="attribute"><b>Animal</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>from</b></span></li>
+                <li><span class="attribute"><b>From Business</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>to</b></span></li>
+                <li><span class="attribute"><b>To Business</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>transactionId</b></span></li>
+                <li><span class="attribute"><b>Transaction ID (auto-generated)</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>timestamp</b></span></li>
+                <li><span class="attribute"><b>Timestamp (auto-generated)</b></span></li>
               
             
           </ul>
         </div>
       </div>
-      <button type="button" class="btn btn-primary invokeTransactionBtn" data-toggle="modal">Invoke</button>
+      <button (click)="resetForm();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTransactionModal">Invoke</button>
     </div>
   </div>
 </div>

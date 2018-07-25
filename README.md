@@ -6,7 +6,7 @@ Blockchain network for animal tracking between farms. Based on the Hyperledger C
 
 For detailed instructions on the pre-requisites visit [Hyperledger Composer development tools](https://hyperledger.github.io/composer/latest/installing/development-tools.html)
 
-#### You will need `node`, `nvm`, `XCode`, and `docker` installed
+#### You will need `node`, `nvm`, `Xcode`, and `docker` installed
 
 #### You will also need the Hyperledger Composer CLI tools:
 - `npm install -g composer-cli`
@@ -49,11 +49,11 @@ cd ~/fabric-dev-servers
 
 Install the business network:
 ```
-composer network install --card PeerAdmin@hlfv1 --archiveFile [network-name]@0.0.1.bna
+composer network install --card PeerAdmin@hlfv1 --archiveFile animaltracking-network@0.0.1.bna
 ```
 Start business network:
 ```
-composer network start --networkName [networkname] --networkVersion 0.0.1 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file networkadmin.card
+composer network start --networkName animaltracking-network --networkVersion 0.0.1 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file networkadmin.card
 ```
 Import the network administrator identity as a usable business network card:
 ```
@@ -76,5 +76,3 @@ cd animaltracking-network-app
 npm start
 ```
 The app will then be running at `localhost:4200`
-
-# hc-animaltracking-blockchain

@@ -17,7 +17,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="addTransactionModalLabel">Create Transaction</h4>
-          <p class="modal-intro">Enter the required values below.</p>
+          <p class="modal-intro">Are you sure you want to submit this transaction?</p>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
@@ -26,7 +26,7 @@
           
 
             
-              <div class="form-group text-left">
+              <!-- <div class="form-group text-left">
                 <label for="transactionId">transactionId</label>
                 
                   <input formControlName="transactionId" type="text" class="form-control">
@@ -41,7 +41,7 @@
                 
                   <input formControlName="timestamp" type="text" class="form-control">
                 
-              </div>
+              </div> -->
             
           
 
@@ -140,7 +140,7 @@
   
   <div class="row">
     <div class="col-md-12">
-        <h1 class="transaction-title" id='transactionName'>SetupDemo</h1>
+        <h1 class="transaction-title" id='transactionName'>Setup Demo</h1>
         <p class="invoke_cancel" id='invoke_cancel'>Invoke</p>
     </div>
   </div>
@@ -155,18 +155,18 @@
             
 
               
-                <li><span class="attribute"><b>transactionId</b></span></li>
+                <li><span class="attribute"><b>Transaction Id (auto-generated)</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>timestamp</b></span></li>
+                <li><span class="attribute"><b>Timestamp (auto-generated)</b></span></li>
               
             
           </ul>
         </div>
       </div>
-      <button type="button" class="btn btn-primary invokeTransactionBtn" data-toggle="modal">Invoke</button>
+      <button (click)="resetForm();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTransactionModal">Invoke</button>
     </div>
   </div>
 </div>
